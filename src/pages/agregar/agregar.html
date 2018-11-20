@@ -1,0 +1,41 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Agregar Contacto</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+
+    <ion-item>
+      <ion-input [(ngModel)]="nombre" type="text" placeholder="Nombre"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input [(ngModel)]="telefono" type="text" placeholder="Telefono"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input [(ngModel)]="correo" type="text" placeholder="Correo"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input [(ngModel)]="facebook" type="text" placeholder="Facebook"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input [(ngModel)]="twitter" type="text" placeholder="Twitter"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input [(ngModel)]="instagram" type="text" placeholder="Instagram"></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+  <button ion-button block (click)="clickAdd()" >Agregar</button>
+
+</ion-content>
